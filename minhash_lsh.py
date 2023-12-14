@@ -17,7 +17,6 @@ class JiebaSegment(object):
 
     def segment(self, text):
         res = list(jieba.cut(text))
-        # res = self.remove_stopwords(res)
         return res
 
     def segment_multi_p(self, text_list, core_num=None):
